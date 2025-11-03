@@ -457,7 +457,7 @@ As for the cause, there may be many reasons but the problem is definitely in the
      ![Result of configure accept in shell](Images/image-36.png)
 
   - So back to the main issue, if all the above cases are not true, what did I miss? And then I suddenly realized when I looked back at the first packet Kali sent in ```Test 1``` and I went back to check my Default Route.  
-     ![Configure Route](images/image-37.png)
+     ![Configure Route](Imanges/image-37.png)
    > Even if not sending traffic through the router, the kernel still maintains the ARP entry of the default gateway (192.168.1.1) because
    Default route is onlink (meaning the kernel is forced to ensure it can reach the gateway if it needs to redirect).
    After flushing ARP, the kernel has not seen the MAC of the router → when there is ICMP activity or routing check, the kernel automatically sends an ARP request to ensure the route is valid. This behavior is the same as the behavior after just restarting Kali, it also defaults to sending an ARP Request to the Router to ensure the route is valid (frame ```534```).
