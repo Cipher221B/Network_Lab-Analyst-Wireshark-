@@ -1,7 +1,7 @@
 # Case Study 001 - ARP Behavior
 **Date:** `2025-10-20`    
 **Analyst:** Huynh Thanh Tu  
-**Repo:** `network-labs/001_ARP_Flush_Analysis`
+**Repo:** `Network_Lab-Analyst-Wireshark-/001_ARP_Behaviors_Analysis`
 ---
 
 ## 1. Objective  
